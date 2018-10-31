@@ -1,13 +1,12 @@
 ---
-title: "Holy cow!"
+title: "Haoran's Website"
 output:
   html_document: 
     toc: true
     toc_float: true
 ---
 
-### I have a webpage!
+### Welcome!
 
-And I can put all kinds of stuff on it!
+This is Haoran Hu's personal website. For now, this site is just for our data science homework, and I will update the information on this site later on.
 
- to link to my favorite tool for data science, I’d use [this](https://www.google.com); to link to the about page on this site, I’d use [about](about.html).

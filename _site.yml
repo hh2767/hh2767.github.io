@@ -1,12 +1,18 @@
 name: "haorans-website!"
 output_dir: "."
 navbar:
-  title: "Haoran's Website"
+  title: "Home"
   right:
     - text: "About"
       href: about.html
-    - icon: fa-envelope fa-lg
-      href: mailto:hh2767@columbia.edu
+    - text: "Contact Info"
+      menu:
+        - icon: fa-facebook
+          href: https://www.facebook.com/haoran.hu.754
+        - icon: fa-github
+          href: https://github.com/hh2767
+        - icon: fa-envelope
+          href: mailto:hh2767@columbia.edu
     - icon: fa-github fa-lg
       href: http://github.com/hh2767/
 output:
