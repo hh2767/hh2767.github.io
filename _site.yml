@@ -8,8 +8,8 @@ navbar:
     - icon: fa-envelope fa-lg
       href: mailto:hh2767@columbia.edu
     - icon: fa-github fa-lg
-      href: http://github.com/<YOUR_GH_NAME>/
+      href: http://github.com/hh2767/
 output:
   html_document:
-    theme: yeti
+    theme: flatly
     css: style.css
