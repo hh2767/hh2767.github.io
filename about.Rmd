@@ -4,6 +4,7 @@ title: "About"
 
 ### About this site
 
+This site is created for P8105 homework 4. It is made in Rmarkdown, and it's hosted in my github repository. By clicking on the octocat button on the upper right corner of this webpage, you will be directed to my github homepage, If you want to find the source code, 
 Sometimes you need to say a bit about the site -- how it was made, where it's hosted, where the source code can be found. 
 
 If this is for a project or analysis, I recommend giving some details about the R package versions that you used to create the content.
