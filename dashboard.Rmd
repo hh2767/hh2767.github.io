@@ -46,32 +46,38 @@ data(ny_noaa)
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Precipitation in each month of 2007
+### Snow in each day of December in 2007
 
 ```{r}
  ny_noaa %>% 
-   group_by(month) %>% 
-   summarize(`Total precipitation in a month` = sum(!is.na(prcp_mm)), tmax_month = mean(!is.na(tmax_c)), tmin_month = mean(!is.na(tmin_c))) %>%
-   mutate(text_label = str_c("Average maximun temperature:", round(tmax_month, 2) , "°C",  '\nAverage maximun temperature:', round(tmin_month, 2) , "°C")) %>%
-   plot_ly(x = ~month, y = ~`Total precipitation in a month`,color = ~month, type = "bar", text = ~text_label)
+  rename(`snow(mm)` = snow_mm) %>%
+  rename(`Min Temperature of the day` = tmin_c) %>%
+  filter(month == "December") %>% 
+  filter(!is.na(prcp_mm) & !is.na(`Min Temperature of the day`)) %>% 
+  mutate(text_label = str_c("Precipitation: ", prcp_mm, "mm")) %>% 
+  plot_ly(x = ~day, y = ~`snow(mm)`, type = "scatter", mode = "markers", alpha = 0.5, color = ~`Min Temperature of the day`, text = ~text_label)
 ```
 
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Distribution of maximum temperature each month
+### Distribution of maximum temperature each month in 2007
 
 ```{r}
 ny_noaa %>% 
-  rename(`Maximum Temperature` = tmax_c) %>% 
+  rename(`Max Temperature` = tmax_c) %>% 
   group_by(month) %>% 
   mutate(text_label = str_c("Average Precipitation: ", mean(!is.na(prcp_mm)), "mm")) %>% 
-  plot_ly(x = ~month, y = ~`Maximum Temperature`, color = ~month, type = "box", text = ~text_label)
+  plot_ly(x = ~month, y = ~`Max Temperature`, color = ~month, type = "box", text = ~text_label)
 
 ```
 
-### Chart C
+### Precipitation in each month of 2007
 
 ```{r}
-
+ny_noaa %>% 
+   group_by(month) %>% 
+   summarize(`Total precipitation in a month` = sum(!is.na(prcp_mm)), tmax_month = mean(!is.na(tmax_c)), tmin_month = mean(!is.na(tmin_c))) %>%
+   mutate(text_label = str_c("Average maximun temperature:", round(tmax_month, 2) , "°C",  '\nAverage maximun temperature:', round(tmin_month, 2) , "°C")) %>%
+   plot_ly(x = ~month, y = ~`Total precipitation in a month`,color = ~month, type = "bar", text = ~text_label)
 ```
