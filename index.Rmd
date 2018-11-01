@@ -5,8 +5,17 @@ output:
     toc: true
     toc_float: true
 ---
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+library(tidyverse)
+library(htmltools)
+
+htmltools::tagList(rmarkdown::html_dependency_font_awesome())
+```
 
 ### Welcome!
 
 This will be Haoran Hu's personal website. For now, this site is just for our data science homework, and I will update the information on this site later on.
+
+You can click on the buttons on the upper right corner to find the information you want.
 
