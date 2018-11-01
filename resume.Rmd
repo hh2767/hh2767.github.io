@@ -31,27 +31,27 @@ Bachelor of Science in Mathematics and Applied Mathematics;[ GPA: 3.78/4.0]{styl
 * Core courses: Mathematical Analysis, Linear Algebra, Real Analysis, Differential equations
 
 
-* 	Awarded Third Prizescholarship for 2017
+*	Awarded Third Prizescholarship for 2017
 
-* 	Merit Student for 2015, 2016 and 2017 respectively
+*	Merit Student for 2015, 2016 and 2017 respectively
 
-* 	Meritorious Winner, 2016 Interdisciplinary Contest In Modeling (ICM
+*	Meritorious Winner, 2016 Interdisciplinary Contest In Modeling (ICM
 )
-* 	Awarded Macao alumni scholarship for 2016
+*	Awarded Macao alumni scholarship for 2016
 
-* 	Awarded Second Prizescholarship for 2015
+*	Awarded Second Prizescholarship for 2015
 
-* 	Awarded excellent leader of the Student Organizations for 2015
+*	Awarded excellent leader of the Student Organizations for 2015
 
-* 	Champion of College sports meeting for 1500m race of 2016 (Breaking record)
+*	Champion of College sports meeting for 1500m race of 2016 (Breaking record)
 
 ##PROJECTS
 
-* 	Optimization workflow: Optimized an objective function through the method of exhaustion
+*	Optimization workflow: Optimized an objective function through the method of exhaustion
 
-* 	Principal Component Analysis (PCA): Applied PCA to compute and compare the indicators of economic development in six major districts of Shenzhen City
+*	Principal Component Analysis (PCA): Applied PCA to compute and compare the indicators of economic development in six major districts of Shenzhen City
 
-* 	Interpolant Fitting Methods: Selected sample points and used Shepard’s method to estimate the spatial distribution of soil salinity in a region
+*	Interpolant Fitting Methods: Selected sample points and used Shepard’s method to estimate the spatial distribution of soil salinity in a region
 
 ##RESEARCH
 
@@ -59,22 +59,22 @@ Bachelor of Science in Mathematics and Applied Mathematics;[ GPA: 3.78/4.0]{styl
 
 _Institute of Automation, Chinese Academic of Science, Research Assistant_
 
-* 	Learned about different computational methods for human microRNA-disease association prediction 
+*	Learned about different computational methods for human microRNA-disease association prediction 
 
-* 	Proposed an improved RWRMDA algorithm by using Gaussian kernel function and semantic similarity of diseases to construct disease similarity matrix
+*	Proposed an improved RWRMDA algorithm by using Gaussian kernel function and semantic similarity of diseases to construct disease similarity matrix
 
-* 	Validated the accuracy of the improved random walk through Matlab programming
+*	Validated the accuracy of the improved random walk through Matlab programming
 
 ##INTERNSHIP
 **CITIC Securities Co., LTD**[_Jul. 2016 – Aug. 2016_]{style="float:right"}				               
 
 _Intern, Research Department_
 
-* 	Analyzed the equity change, stemming from policy changes, within more than 100state-owned enterprises in, based on aspects of policy, government behavior and corporate behavior.
+*	Analyzed the equity change, stemming from policy changes, within more than 100state-owned enterprises in, based on aspects of policy, government behavior and corporate behavior.
 
-* 	Examined the main businesses of publicly listed companies with controlling shares held by state-owned enterprises, and identified investment opportunities in companies that may go fully public in the near future
+*	Examined the main businesses of publicly listed companies with controlling shares held by state-owned enterprises, and identified investment opportunities in companies that may go fully public in the near future
 
-* 	Presented the results to clients in clear and concise pictures
+*	Presented the results to clients in clear and concise pictures
 
 ##SKILLS
 R, Matlab, SPSS, SQL, Mathematica
