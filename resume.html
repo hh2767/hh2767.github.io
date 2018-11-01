@@ -9,10 +9,9 @@
 <meta name="generator" content="pandoc" />
 
 
-<meta name="author" content="Haoran Hu" />
 
 
-<title>resume</title>
+<title>HU, HAORAN</title>
 
 <script src="site_libs/jquery-1.11.3/jquery.min.js"></script>
 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -20,6 +19,9 @@
 <script src="site_libs/bootstrap-3.3.5/js/bootstrap.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/html5shiv.min.js"></script>
 <script src="site_libs/bootstrap-3.3.5/shim/respond.min.js"></script>
+<script src="site_libs/jqueryui-1.11.4/jquery-ui.min.js"></script>
+<link href="site_libs/tocify-1.9.1/jquery.tocify.css" rel="stylesheet" />
+<script src="site_libs/tocify-1.9.1/jquery.tocify.js"></script>
 <script src="site_libs/navigation-1.1/tabsets.js"></script>
 <link href="site_libs/highlightjs-9.12.0/default.css" rel="stylesheet" />
 <script src="site_libs/highlightjs-9.12.0/highlight.js"></script>
@@ -170,6 +172,101 @@ $(document).ready(function () {
 
 
 
+<script>
+$(document).ready(function ()  {
+
+    // move toc-ignore selectors from section div to header
+    $('div.section.toc-ignore')
+        .removeClass('toc-ignore')
+        .children('h1,h2,h3,h4,h5').addClass('toc-ignore');
+
+    // establish options
+    var options = {
+      selectors: "h1,h2,h3",
+      theme: "bootstrap3",
+      context: '.toc-content',
+      hashGenerator: function (text) {
+        return text.replace(/[.\\/?&!#<>]/g, '').replace(/\s/g, '_').toLowerCase();
+      },
+      ignoreSelector: ".toc-ignore",
+      scrollTo: 0
+    };
+    options.showAndHide = true;
+    options.smoothScroll = true;
+
+    // tocify
+    var toc = $("#TOC").tocify(options).data("toc-tocify");
+});
+</script>
+
+<style type="text/css">
+
+#TOC {
+  margin: 25px 0px 20px 0px;
+}
+@media (max-width: 768px) {
+#TOC {
+  position: relative;
+  width: 100%;
+}
+}
+
+
+.toc-content {
+  padding-left: 30px;
+  padding-right: 40px;
+}
+
+div.main-container {
+  max-width: 1200px;
+}
+
+div.tocify {
+  width: 20%;
+  max-width: 260px;
+  max-height: 85%;
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  div.tocify {
+    width: 25%;
+  }
+}
+
+@media (max-width: 767px) {
+  div.tocify {
+    width: 100%;
+    max-width: none;
+  }
+}
+
+.tocify ul, .tocify li {
+  line-height: 20px;
+}
+
+.tocify-subheader .tocify-item {
+  font-size: 0.90em;
+  padding-left: 25px;
+  text-indent: 0;
+}
+
+.tocify .list-group-item {
+  border-radius: 0px;
+}
+
+
+</style>
+
+<!-- setup 3col/9col grid for toc_float and main content  -->
+<div class="row-fluid">
+<div class="col-xs-12 col-sm-4 col-md-3">
+<div id="TOC" class="tocify">
+</div>
+</div>
+
+<div class="toc-content col-xs-12 col-sm-8 col-md-9">
+
+
 
 
 <div class="navbar navbar-default  navbar-fixed-top" role="navigation">
@@ -235,20 +332,70 @@ $(document).ready(function () {
 
 
 
-<h1 class="title toc-ignore">resume</h1>
-<h4 class="author"><em>Haoran Hu</em></h4>
+<h1 class="title toc-ignore">HU, HAORAN</h1>
 
 </div>
 
 
-<div id="hu-haoran" class="section level1">
-<h1>HU, HAORAN</h1>
-<p><em>Phone:(646)-479-8979 Email: <a href="mailto:hh2767@columbia.edu">hh2767@columbia.edu</a></em> <em>50 Haven Ave, New York, NY, 10032</em> <strong>EDUCATION</strong></p>
-<p>Columbia University Sep.2018–May.2020(Anticipated) Candidate for Master of Science in Biostatistics; Courses: Biostatistical Methods, Probability, Epidemiology, Data Science South China University of Technology (SCUT) Sep. 2014 – Jun. 2018 Bachelor of Science in Mathematics and Applied Mathematics; GPA: 3.76/4.0 Core courses: Mathematical Analysis, Linear Algebra, Real Analysis, Differential equations  Awarded Third Prizescholarship for 2017  Merit Student for 2015, 2016 and 2017 respectively  Meritorious Winner, 2016 Interdisciplinary Contest In Modeling (ICM)  Awarded Macao alumni scholarship for 2016  Awarded Second Prizescholarship for 2015  Awarded excellent leader of the Student Organizations for 2015  Champion of College sports meeting for 1500m race of 2016 (Breaking record) PROJECTS  Optimization workflow: Optimized an objective function through the method of exhaustion  Principal Component Analysis (PCA): Applied PCA to compute and compare the indicators of economic development in six major districts of Shenzhen City  Interpolant Fitting Methods: Selected sample points and used Shepard’s method to estimate the spatial distribution of soil salinity in a region RESEARCH Biological Big Data: Analysis, Calculation, and Prediction Jan. 2017 Institute of Automation, Chinese Academic of Science, Research Assistant  Learned about different computational methods for human microRNA-disease association prediction  Proposed an improved RWRMDA algorithm by using Gaussian kernel function and semantic similarity of diseases to construct disease similarity matrix  Validated the accuracy of the improved random walk through Matlab programming INTERNSHIP CITIC Securities Co., LTD Jul. 2016 – Aug. 2016 Intern, Research Department  Analyzed the equity change, stemming from policy changes, within more than 100state-owned enterprises in, based on aspects of policy, government behavior and corporate behavior.  Examined the main businesses of publicly listed companies with controlling shares held by state-owned enterprises, and identified investment opportunities in companies that may go fully public in the near future  Presented the results to clients in clear and concise pictures SKILLS R, Matlab, SPSS, SQL, Mathematica</p>
+<p><em>Phone:(646)-479-8979</em>      <em>Email: <a href="mailto:hh2767@columbia.edu">hh2767@columbia.edu</a></em></p>
+<p><em>50 Haven Ave, New York, NY, 10032</em></p>
+<div id="education" class="section level2">
+<h2>EDUCATION</h2>
+<p><strong>Columbia University</strong> <span style="float:right"><em>Sep.2018–May.2020(Anticipated)</em></span></p>
+<p>Candidate for Master of Science in Biostatistics;</p>
+<ul>
+<li>Courses: Biostatistical Methods, Probability, Epidemiology, Data Science</li>
+</ul>
+<p><strong>South China University of Technology (SCUT)</strong><span style="float:right"><em>Sep. 2014 – Jun. 2018</em></span></p>
+<p>Bachelor of Science in Mathematics and Applied Mathematics;<span style="float:right">GPA: 3.78/4.0</span></p>
+<ul>
+<li><p>Core courses: Mathematical Analysis, Linear Algebra, Real Analysis, Differential equations</p></li>
+<li><p> Awarded Third Prizescholarship for 2017</p></li>
+<li><p> Merit Student for 2015, 2016 and 2017 respectively</p></li>
+<li> Meritorious Winner, 2016 Interdisciplinary Contest In Modeling (ICM )</li>
+<li><p> Awarded Macao alumni scholarship for 2016</p></li>
+<li><p> Awarded Second Prizescholarship for 2015</p></li>
+<li><p> Awarded excellent leader of the Student Organizations for 2015</p></li>
+<li><p> Champion of College sports meeting for 1500m race of 2016 (Breaking record)</p></li>
+</ul>
+</div>
+<div id="projects" class="section level2">
+<h2>PROJECTS</h2>
+<ul>
+<li><p> Optimization workflow: Optimized an objective function through the method of exhaustion</p></li>
+<li><p> Principal Component Analysis (PCA): Applied PCA to compute and compare the indicators of economic development in six major districts of Shenzhen City</p></li>
+<li><p> Interpolant Fitting Methods: Selected sample points and used Shepard’s method to estimate the spatial distribution of soil salinity in a region</p></li>
+</ul>
+</div>
+<div id="research" class="section level2">
+<h2>RESEARCH</h2>
+<p><strong>Biological Big Data: Analysis, Calculation, and Prediction</strong> <span style="float:right"><em>Jan. 2017</em></span></p>
+<p><em>Institute of Automation, Chinese Academic of Science, Research Assistant</em></p>
+<ul>
+<li><p> Learned about different computational methods for human microRNA-disease association prediction</p></li>
+<li><p> Proposed an improved RWRMDA algorithm by using Gaussian kernel function and semantic similarity of diseases to construct disease similarity matrix</p></li>
+<li><p> Validated the accuracy of the improved random walk through Matlab programming</p></li>
+</ul>
+</div>
+<div id="internship" class="section level2">
+<h2>INTERNSHIP</h2>
+<p><strong>CITIC Securities Co., LTD</strong><span style="float:right"><em>Jul. 2016 – Aug. 2016</em></span></p>
+<p><em>Intern, Research Department</em></p>
+<ul>
+<li><p> Analyzed the equity change, stemming from policy changes, within more than 100state-owned enterprises in, based on aspects of policy, government behavior and corporate behavior.</p></li>
+<li><p> Examined the main businesses of publicly listed companies with controlling shares held by state-owned enterprises, and identified investment opportunities in companies that may go fully public in the near future</p></li>
+<li><p> Presented the results to clients in clear and concise pictures</p></li>
+</ul>
+</div>
+<div id="skills" class="section level2">
+<h2>SKILLS</h2>
+<p>R, Matlab, SPSS, SQL, Mathematica</p>
 </div>
 
 
 
+</div>
+</div>
 
 </div>
 

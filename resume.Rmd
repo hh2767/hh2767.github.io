@@ -1,46 +1,80 @@
 ---
-title: "resume"
-author: "Haoran Hu"
-output: html_document
+title: "HU, HAORAN"
+output: 
+ html_document:
+    toc: true
+    toc_float: true
 ---
 
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
 
-#HU, HAORAN
-_Phone:(646)-479-8979	      Email: hh2767@columbia.edu_
-_50 Haven Ave, New York, NY, 10032_
-**EDUCATION**
 
-Columbia University                       Sep.2018–May.2020(Anticipated)
+
+_Phone:(646)-479-8979_	 &emsp;&emsp;&emsp;&emsp;   _Email: hh2767@columbia.edu_
+
+_50 Haven Ave, New York, NY, 10032_
+
+##EDUCATION
+
+**Columbia University**                [_Sep.2018–May.2020(Anticipated)_]{style="float:right"}
+
 Candidate for Master of Science in Biostatistics;
-Courses: Biostatistical Methods, Probability, Epidemiology, Data Science
-South China University of Technology (SCUT)		     Sep. 2014 – Jun. 2018 
-Bachelor of Science in Mathematics and Applied Mathematics;         GPA: 3.76/4.0
-Core courses: Mathematical Analysis, Linear Algebra, Real Analysis, Differential equations
-	Awarded Third Prizescholarship for 2017
-	Merit Student for 2015, 2016 and 2017 respectively
-	Meritorious Winner, 2016 Interdisciplinary Contest In Modeling (ICM)
-	Awarded Macao alumni scholarship for 2016
-	Awarded Second Prizescholarship for 2015
-	Awarded excellent leader of the Student Organizations for 2015
-	Champion of College sports meeting for 1500m race of 2016 (Breaking record)
-PROJECTS
-	Optimization workflow: Optimized an objective function through the method of exhaustion
-	Principal Component Analysis (PCA): Applied PCA to compute and compare the indicators of economic development in six major districts of Shenzhen City
-	Interpolant Fitting Methods: Selected sample points and used Shepard’s method to estimate the spatial distribution of soil salinity in a region
-RESEARCH
-Biological Big Data: Analysis, Calculation, and Prediction           Jan. 2017
-Institute of Automation, Chinese Academic of Science, Research Assistant
-	Learned about different computational methods for human microRNA-disease association prediction 
-	Proposed an improved RWRMDA algorithm by using Gaussian kernel function and semantic similarity of diseases to construct disease similarity matrix
-	Validated the accuracy of the improved random walk through Matlab programming
-INTERNSHIP
-CITIC Securities Co., LTD				               Jul. 2016 – Aug. 2016
-Intern, Research Department
-	Analyzed the equity change, stemming from policy changes, within more than 100state-owned enterprises in, based on aspects of policy, government behavior and corporate behavior.
-	Examined the main businesses of publicly listed companies with controlling shares held by state-owned enterprises, and identified investment opportunities in companies that may go fully public in the near future
-	Presented the results to clients in clear and concise pictures
-SKILLS
+
+* Courses: Biostatistical Methods, Probability, Epidemiology, Data Science
+
+**South China University of Technology (SCUT)**[ _Sep. 2014 – Jun. 2018_]{style="float:right"}		    
+
+Bachelor of Science in Mathematics and Applied Mathematics;[ GPA: 3.78/4.0]{style="float:right"}
+
+* Core courses: Mathematical Analysis, Linear Algebra, Real Analysis, Differential equations
+
+
+* 	Awarded Third Prizescholarship for 2017
+
+* 	Merit Student for 2015, 2016 and 2017 respectively
+
+* 	Meritorious Winner, 2016 Interdisciplinary Contest In Modeling (ICM
+)
+* 	Awarded Macao alumni scholarship for 2016
+
+* 	Awarded Second Prizescholarship for 2015
+
+* 	Awarded excellent leader of the Student Organizations for 2015
+
+* 	Champion of College sports meeting for 1500m race of 2016 (Breaking record)
+
+##PROJECTS
+
+* 	Optimization workflow: Optimized an objective function through the method of exhaustion
+
+* 	Principal Component Analysis (PCA): Applied PCA to compute and compare the indicators of economic development in six major districts of Shenzhen City
+
+* 	Interpolant Fitting Methods: Selected sample points and used Shepard’s method to estimate the spatial distribution of soil salinity in a region
+
+##RESEARCH
+
+**Biological Big Data: Analysis, Calculation, and Prediction** [_Jan. 2017_]{style="float:right"}          
+
+_Institute of Automation, Chinese Academic of Science, Research Assistant_
+
+* 	Learned about different computational methods for human microRNA-disease association prediction 
+
+* 	Proposed an improved RWRMDA algorithm by using Gaussian kernel function and semantic similarity of diseases to construct disease similarity matrix
+
+* 	Validated the accuracy of the improved random walk through Matlab programming
+
+##INTERNSHIP
+**CITIC Securities Co., LTD**[_Jul. 2016 – Aug. 2016_]{style="float:right"}				               
+
+_Intern, Research Department_
+
+* 	Analyzed the equity change, stemming from policy changes, within more than 100state-owned enterprises in, based on aspects of policy, government behavior and corporate behavior.
+
+* 	Examined the main businesses of publicly listed companies with controlling shares held by state-owned enterprises, and identified investment opportunities in companies that may go fully public in the near future
+
+* 	Presented the results to clients in clear and concise pictures
+
+##SKILLS
 R, Matlab, SPSS, SQL, Mathematica
