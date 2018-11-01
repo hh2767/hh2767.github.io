@@ -67,7 +67,7 @@ Column {data-width=350}
 ny_noaa %>% 
   rename(`Max Temperature` = tmax_c) %>% 
   group_by(month) %>% 
-  mutate(text_label = str_c("Average Precipitation: ", mean(!is.na(prcp_mm)), "mm")) %>% 
+  mutate(text_label = str_c("Average Precipitation: ", round(mean(!is.na(prcp_mm)), 2), "mm")) %>% 
   plot_ly(x = ~month, y = ~`Max Temperature`, color = ~month, type = "box", text = ~text_label)
 
 ```
