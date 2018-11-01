@@ -59,10 +59,14 @@ Column {data-width=650}
 Column {data-width=350}
 -----------------------------------------------------------------------
 
-### Chart B
+### Distribution of maximum temperature each month
 
 ```{r}
-
+ny_noaa %>% 
+  rename(`Maximum Temperature` = tmax_c) %>% 
+  group_by(month) %>% 
+  mutate(text_label = str_c("Average Precipitation: ", mean(!is.na(prcp_mm)), "mm")) %>% 
+  plot_ly(x = ~month, y = ~`Maximum Temperature`, color = ~month, type = "box", text = ~text_label)
 
 ```
 
