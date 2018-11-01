@@ -5,6 +5,8 @@ navbar:
   right:
     - text: "About"
       href: about.html
+    - text: "Resume"
+      href: resume.html
     - text: "Contact Info"
       menu:
         - icon: fa-facebook

@@ -8,5 +8,5 @@ output:
 
 ### Welcome!
 
-This is Haoran Hu's personal website. For now, this site is just for our data science homework, and I will update the information on this site later on.
+This will be Haoran Hu's personal website. For now, this site is just for our data science homework, and I will update the information on this site later on.
 
