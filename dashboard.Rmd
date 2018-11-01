@@ -1,5 +1,5 @@
 ---
-title: "Untitled"
+title: "2007 Weather(NOAA) Dashboard"
 output: 
   flexdashboard::flex_dashboard:
     orientation: columns
@@ -8,16 +8,52 @@ output:
 
 ```{r setup, include=FALSE}
 library(flexdashboard)
+library(tidyverse)
 library(p8105.datasets)
+library(plotly)
 ```
+
+First, I need to do some data cleaning. We only consider about data in 2007.
+
+```{r}
+ny_noaa = ny_noaa %>% 
+  separate(date, into = c("year", "month", "day"), sep = "-") %>%
+  mutate(prcp = prcp / 10,
+         snow = snow / 10,
+         tmax = as.numeric(tmax) / 10, 
+         tmin = as.numeric(tmin) / 10) %>% 
+  rename(prcp_mm = prcp, 
+         snow_mm = snow, 
+         snwd_mm = snwd, 
+         tmax_c = tmax, 
+         tmin_c = tmin) %>% 
+  filter(year == 2007)
+
+ny_noaa$month = plyr::mapvalues(ny_noaa$month, 
+          from = c("01", "02", "03", "04", "05", "06", "07", "08", "09", "10", "11", "12"), 
+          to = c("January","Feburary","March", "April", "May", "June", "July", "August", "September", "October", "November", "December"))
+
+ny_noaa %>% 
+mutate(month = factor(month, levels = c("January","Feburary","March", "April", "May", "June", "July", "August", "September", "October", "November", "December"))) 
+```
+
 
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Chart A
+### Precipitation in each month of 2007
 
 ```{r}
-
+ny_noaa %>% 
+  group_by(month) %>% 
+  summarize(`Total precipitation in a month` = sum(!is.na(prcp_mm)), tmax_month = mean(!is.na(tmax_c)), tmin_month = mean(!is.na(tmin_c))) %>%  
+  mutate(text_label = str_c("Average maximun temperature:", tmax_month, "°C",  '\nAverage maximun temperature:', tmin_month, "°C")) %>%
+  plot_ly(x = ~month, 
+          y = ~`Total precipitation in a month`,
+          color = ~month, 
+          type = "bar",
+          text = ~text_label)
+  
 ```
 
 Column {data-width=350}
