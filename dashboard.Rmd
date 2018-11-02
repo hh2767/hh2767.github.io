@@ -46,7 +46,7 @@ data(ny_noaa)
 Column {data-width=650}
 -----------------------------------------------------------------------
 
-### Snow in each day of December in 2007
+### Snow in each day of December in 2007(Observed by different stations)
 
 ```{r}
  ny_noaa %>% 
