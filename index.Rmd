@@ -23,7 +23,7 @@ The information included in this site is:
 
 * [My resume](resume.html)
 
-* [A dashboard with some plots made with plot_ly](dashboard_noaa)
+* [A dashboard with some plots made with plot_ly](dashboard_noaa.html)
 
 * [My contact information](https://www.facebook.com/haoran.hu.754)
 
