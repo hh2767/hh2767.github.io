@@ -8,7 +8,7 @@ navbar:
     - text: "Resume"
       href: resume.html
     - text: "Dashboard"
-      href: dashboard.html  
+      href: dashboard_noaa.html  
     - text: "Contact Info"
       menu:
         - icon: fa-facebook
