@@ -21,10 +21,10 @@ You can click on the buttons on the upper right corner to find the information y
 
 The information included in this site is:
 
-* My resume
+* [My resume](resume.html)
 
-* A dashboard with some plots made with plot_ly
+* [A dashboard with some plots made with plot_ly](dashboard_noaa)
 
-* My contact information
+* [My contact information](https://www.facebook.com/haoran.hu.754)
 
-* Information about this site
+* [Information about this site](about)
