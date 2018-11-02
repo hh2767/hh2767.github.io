@@ -19,3 +19,12 @@ This will be Haoran Hu's personal website. For now, this site is just for our da
 
 You can click on the buttons on the upper right corner to find the information you want.
 
+The information included in this site is:
+
+* My resume
+
+* A dashboard with some plots made with plot_ly
+
+* My contact information
+
+* Information about this site
